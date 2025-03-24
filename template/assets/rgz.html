@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="scripts/rgz_script.js"></script>
+</head>
+<body>
+<header class="inner-wrapper">
+    <div class="inner-wrapper">
+        <nav>
+            <div class="flex_container">
+                <img src="../assets/images/nstu.png" width="90" height="90" alt="nstu" class="nstuImg">
+                <h1 class="labHeader">Расчетно-графическое задание</h1>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="inner-wrapper color_change">
+    <article>
+        <section>
+            <div class="title_container ">
+                <div class="title_name color_change">Вариант №2</div>
+                <div class="title_border"></div>
+            </div>
+            <div>
+                <p class="test">
+                    Калькулятор цвета. Отобразить таблицу, фоны ячеек которой окрашены в
+                    web-гарантированные цвета. По щелчку левой кнопки мыши на образце цвета
+                    изменяется цвет текста документа, по щелчку правой кнопки мыши — цвет
+                    фона документа, также появляется окно с шестнадцатеричным кодом цвета.
+                    Предусмотреть три поля для задания цветовых составляющих и отображения
+                    цвета, в отдельном, например, окне.
+                </p>
+                <p>
+                    Среди прочего использовать возможности, предоставляемые библиотекой
+                    jQuery.
+                </p>
+            </div>
+            <div class="title_container">
+                <div class="title_name color_change">Выполненное задание:</div>
+                <div class="title_border"></div>
+            </div>
+            <!--            <script>-->
+            <!--                if (window.jQuery) {-->
+            <!--                    // jQuery подключен к странице-->
+            <!--                    console.log('it works!')-->
+            <!--                }-->
+            <!--            </script>-->
+            <div class="flex_table">
+                <table class="grid">
+                    <tr>
+                        <td class="table_td" style="background-color: #CCFFFF"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #99FFFF"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #66FFFF"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #33FFFF"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #00FFFF"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #00CCCC"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_td" style="background-color: #99FFCC"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #66FFCC"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #33FFCC"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #00FFCC"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #33CCCC"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #009999"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_td" style="background-color: #66CC99"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #33CC99"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #00CC99"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #339966"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #009966"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #006633"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_td" style="background-color: #66FF99"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #33FF99"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #00FF99"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #33CC66"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #00CC66"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #009933"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_td" style="background-color: #99FF99"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #66FF66"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #33FF66"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #00FF66"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #339933"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #006600"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_td" style="background-color: #CCFFCC"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #99CC99"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #66CC66"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #669966"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #336633"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                        <td class="table_td" style="background-color: #003300"
+                            onmouseover="this.className='temp'; changeColor()" onmouseout="this.className='table_td'">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+                <!--todo Предусмотреть три поля для задания цветовых составляющих и отображения цвета, в отдельном, например, окне-->
+                <!--todo баввить изменение цвета по строке-->
+                <div class="button_flex">
+                    <table>
+                        <tr>
+                            <td colspan="2" class="color_selector" style="background-color: black">&nbsp</td>
+                        </tr>
+                        <tr>
+                            <td><span>RGB кодировка цвета:</span></td>
+                            <td><input type="text" readonly id="RGB" style="width: 150px; height: 30px;"><label
+                                    for="RGB"></label></td>
+                        </tr>
+                        <tr>
+                            <td><span>Шестнадцатиричная кодировка цвета:</span></td>
+                            <td><input type="text" readonly id="hexadecimal" style="width: 150px; height: 30px;"><label
+                                    for="hexadecimal"></label></td>
+                        </tr>
+                    </table>
+                    <button class="butt" onclick="setDefault()">Сбросить цвет</button>
+                </div>
+            </div>
+            <div class="title_container">
+                <div class="title_name color_change">Color selector:</div>
+                <div class="title_border"></div>
+            </div>
+            <div>
+                <table class="selector_table">
+                    <tr class="rgb">
+                        <td><label
+                                for="redInput">R: <input type="number" class="color-input" id="redInput"
+                                                         style="width: 150px; height: 30px;" onmouseover="space_check()" onchange="space_check()" min="0" max="255"></label>
+                        </td>
+                        <td><label
+                                for="greenInput">G: <input type="number" class="color-input" id="greenInput"
+                                                           style="width: 150px; height: 30px;" onmouseover="space_check()" onchange="space_check()" min="0"
+                                                           max="255"></label>
+                        </td>
+                        <td><label
+                                for="blueInput">B: <input type="number" class="color-input" id="blueInput"
+                                                          style="width: 150px; height: 30px;" onmouseover="space_check()" onchange="space_check()" min="0" max="255"></label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+        </section>
+    </article>
+    <!--  aside будет виден только по высоте article  -->
+    <aside>
+
+    </aside>
+</main>
+<footer class="inner-wrapper">
+    <nav>
+        <span>Выполнил студент группы АВТ-143 Кувандыков Р.Н.</span>
+    </nav>
+</footer>
+</body>
+</html>
