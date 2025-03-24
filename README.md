@@ -24,6 +24,6 @@
 
 1. **Клонируйте репозиторий**:
    ```bash
-   git clone https://github.com/yourusername/web-color-calculator.git
+   git clone https://github.com/sadterritory/EDU.color-calculator-web.git
 
    
